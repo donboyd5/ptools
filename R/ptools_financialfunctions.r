@@ -30,7 +30,7 @@ pvann<-function(i, n, pmt){
 #' @param i interest rate
 #' @param g growth rate of payments (annual)
 #' @param n number of periods
-#' @details Returns POSITIVE payment for positive principal
+#' @details Returns POSITIVE payment for positive principal 
 #' @return The initial payment in the graduated annuity
 #' @keywords gaip
 #' @export
