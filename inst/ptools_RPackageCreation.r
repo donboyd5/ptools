@@ -62,7 +62,7 @@ install("ptools")
 
 # optionally install from github
 # setwd("..")
-install_github("ptools","donboyd5")
+devtools::install_github("ptools","donboyd5")
 
 
 
