@@ -43,7 +43,7 @@
 library(devtools)
 library(roxygen2)
 
-setwd("E:\\R\\GitHub\\")
+setwd("E:\\R\\GitHub\\") 
 # create("btools") only run this when needed
 
 # then, create the functions and get into the R subdirectory for the package
