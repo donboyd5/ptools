@@ -1,6 +1,6 @@
 # ptools_RPackageCreation.r
 # Don Boyd
-# 6/1/2014
+# 6/3/2014
 
 # http://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/
 # https://www.rstudio.com/ide/docs/version_control/overview
