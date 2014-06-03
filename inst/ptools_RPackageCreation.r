@@ -10,7 +10,7 @@
 
 # from RStudio/Tools/Shell... execute the following to set the link to github up:
 #   git remote add origin https://github.com/donboyd5/ptools.git
-#   git push ptools
+#   git push ptools 
 
 # http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/
 # http://adv-r.had.co.nz/Package-basics.html
@@ -53,6 +53,8 @@ setwd("E:\\R\\GitHub\\")
 # documentation (must be in the r files with functions)
 # setwd("./ptools")
 # document()
+devtools::document(pkg="E:\\R\\GitHub\\ptools", clean=TRUE, roclets=c("rd", "namespace", "collate")) # roclets default seems to be c("rd", "namespace")
+devtools::document(pkg="E:\\R\\GitHub\\ptools", clean=TRUE, roclets=c("rd")) # roclets default seems to be c("rd", "namespace")
 # 
 # getwd()
 # # install
