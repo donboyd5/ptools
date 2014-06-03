@@ -51,13 +51,13 @@ setwd("E:\\R\\GitHub\\")
 
 # REPEAT the steps below each time the package is revised
 # documentation (must be in the r files with functions)
-setwd("./ptools")
-document()
-
-getwd()
-# install
-setwd("..")
-install("ptools")
+# setwd("./ptools")
+# document()
+# 
+# getwd()
+# # install
+# setwd("..")
+# install("ptools")
 
 
 # optionally install from github

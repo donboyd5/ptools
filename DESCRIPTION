@@ -1,9 +1,9 @@
 Package: ptools
 Type: Package
 Title: Tools for simulation modeling of pension funds
-Version: 1.0
-Date: 2014-06-01
-Authors@R: "Don Boyd <donboyd5@gmail.com> [aut, cre]"
-Maintainer: Who to complain to <yourfault@somewhere.net>
+Version: 0.1
+Date: 2014-06-03
+Author: Don Boyd <donboyd5@gmail.com>
+Maintainer: Don Boyd <donboyd5@gmail.com>
 Description: Functions needed for simulation modeling
-License: What license is it under?
+License: No restrictions
