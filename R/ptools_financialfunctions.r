@@ -1,6 +1,6 @@
 # ptools_financialfunctions.r
 # Don Boyd
-# 6/2/2014
+# 6/3/2014
 
 
 #' @title Present value of an annuity-immediate (with pmt at end of period)
@@ -16,9 +16,9 @@
 #' @export
 #' @examples
 #' pvann(.05, 30, 100000)
-pvann<-function(i, n, pmt){
+pvann <- function(i, n, pmt) {
   # present value of an annuity-immediate (with pmt at end of period)
-  if(i==0) pv<-n*pmt else pv<-pmt*((1-(1+i)^(-n))/i)
+  if(i==0) pv <- n*pmt else pv<-pmt*((1-(1+i)^(-n))/i)
   return(pv)
 }
 
@@ -37,10 +37,10 @@ pvann<-function(i, n, pmt){
 #' @export
 #' @examples
 #' gaip(450, .07, .03, 20)
-gaip<-function(p, i, g, n){
+gaip <- function(p, i, g, n) {
   # returns POSITIVE payment for positive principal 
-  imgc<-(1+i)/(1+g)-1 # i minus g, compounded
-  gaf<- (1+i)/(1-pvann(imgc, n-1, -1)) # grad annuity factor - note "minus" pvann to adjust sign vs Excel
+  imgc <- (1+i)/(1+g)-1 # i minus g, compounded
+  gaf <- (1+i)/(1-pvann(imgc, n-1, -1)) # grad annuity factor - note "minus" pvann to adjust sign vs Excel
   return(gaf*p)
 }
 
@@ -57,8 +57,9 @@ gaip<-function(p, i, g, n){
 #' @export
 #' @examples
 #' pdiff(100, 90)
-pdiff<-function(first, second){
-  return((first - second)/second*100)}
+pdiff <- function(first, second) {
+  return((first - second)/second*100)
+}
 
 #' @title Amortization function
 #'
@@ -73,10 +74,10 @@ pdiff<-function(first, second){
 #' @export
 #' @examples
 #' pmt(450, .07, 20)
-pmt<-function(p, i, n) { 
+pmt <- function(p, i, n) { 
   # amortization function
   # p=principal, i=interest rate, n=periods
-  pmt<-p * (1+i)^n * i/((1+i)^n - 1)
+  pmt <- p * (1+i)^n * i/((1+i)^n - 1)
   return(pmt)
 }
 
