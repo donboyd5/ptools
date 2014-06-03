@@ -22,6 +22,7 @@ pvann<-function(i, n, pmt){
   return(pv)
 }
 
+
 #' @title Graduated annuity initial payment (payments grow at constant annual rate).
 #'
 #' @description \code{gaip} initial payment for a graduated annuity growing at rate g
@@ -42,4 +43,43 @@ gaip<-function(p, i, g, n){
   gaf<- (1+i)/(1-pvann(imgc, n-1, -1)) # grad annuity factor - note "minus" pvann to adjust sign vs Excel
   return(gaf*p)
 }
+
+
+#' @title Percent difference, first value relative to second
+#'
+#' @description \code{pdiff} % difference, first value vs. second value
+#' @usage pdiff(first, second)
+#' @param first first value
+#' @param second second value
+#' @details Use, for example, to get percent difference of actual assets from expected assets
+#' @return The percent difference
+#' @keywords pdiff
+#' @export
+#' @examples
+#' pdiff(100, 90)
+pdiff<-function(first, second){
+  return((first - second)/second*100)}
+
+#' @title Amortization function
+#'
+#' @description \code{pmt} level amortization for principal p, interest rate i, n periods
+#' @usage pmt(p, i, n)
+#' @param p principal
+#' @param i interest rate
+#' @param n number of periods
+#' @details Returns POSITIVE payment for positive principal 
+#' @return The level payment in the annuity
+#' @keywords pmt
+#' @export
+#' @examples
+#' pmt(450, .07, 20)
+pmt<-function(p, i, n) { 
+  # amortization function
+  # p=principal, i=interest rate, n=periods
+  pmt<-p * (1+i)^n * i/((1+i)^n - 1)
+  return(pmt)
+}
+
+
+
 

@@ -2,6 +2,9 @@
 # Don Boyd
 # 6/3/2014
 
+# don't forget to create the ptools-package.r file in the package's R directory. That allows roxygen2 to create a ptools.rd file that
+# provides package-level documentation
+
 # http://www.molecularecologist.com/2013/11/using-github-with-r-and-rstudio/
 # https://www.rstudio.com/ide/docs/version_control/overview
 # http://kbroman.github.io/github_tutorial/
@@ -53,7 +56,7 @@ setwd("E:\\R\\GitHub\\")
 # documentation (must be in the r files with functions)
 # setwd("./ptools")
 # document()
-devtools::document(pkg="E:\\R\\GitHub\\ptools", clean=TRUE, roclets=c("rd", "namespace", "collate")) # roclets default seems to be c("rd", "namespace")
+# devtools::document(pkg="E:\\R\\GitHub\\ptools", clean=TRUE, roclets=c("rd", "namespace", "collate")) # roclets default seems to be c("rd", "namespace")
 devtools::document(pkg="E:\\R\\GitHub\\ptools", clean=TRUE, roclets=c("rd")) # roclets default seems to be c("rd", "namespace")
 # 
 # getwd()
