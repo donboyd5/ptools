@@ -47,17 +47,17 @@ gaip <- function(p, i, g, n) {
 
 #' @title Percent difference, first value relative to second
 #'
-#' @description \code{pdiff} % difference, first value vs. second value
-#' @usage pdiff(first, second)
+#' @description \code{pdiffb} % difference, first value vs. second value
+#' @usage pdiffb(first, second)
 #' @param first first value
 #' @param second second value
 #' @details Use, for example, to get percent difference of actual assets from expected assets
 #' @return The percent difference
-#' @keywords pdiff
+#' @keywords pdiffb
 #' @export
 #' @examples
-#' pdiff(100, 90)
-pdiff <- function(first, second) {
+#' pdiffb(100, 90)
+pdiffb <- function(first, second) {
   return((first - second)/second*100)
 }
 
