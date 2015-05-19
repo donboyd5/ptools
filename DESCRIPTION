@@ -3,7 +3,10 @@ Type: Package
 Title: Tools for simulation modeling of pension funds
 Version: 0.1
 Description: Functions needed for simulation modeling
-Date: 2014-06-03
+Date: 2015-05-19
 Author: Don Boyd <donboyd5@gmail.com>
 Maintainer: Don Boyd <donboyd5@gmail.com>
-License: Unlimited
+License: GPL-2
+LazyData: TRUE
+Imports: dplyr
+
