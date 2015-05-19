@@ -11,7 +11,7 @@ pvann(i, n, pmt)
 
 \item{n}{number of periods}
 
-\item{p}{periodic payment}
+\item{pmt}{periodic payment}
 }
 \value{
 The initial payment
@@ -23,7 +23,7 @@ The initial payment
 Returns a POSITIVE present value for positive payment
 }
 \examples{
-pvann(.05, 30, 100000)
+pvann(.05, 30, 100)
 }
 \keyword{pvann}
 

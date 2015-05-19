@@ -4,7 +4,7 @@
 \alias{pmt}
 \title{Amortization function}
 \usage{
-pmt(p, i, n)
+pmt(p, i, n, end)
 }
 \arguments{
 \item{p}{principal}
@@ -12,6 +12,8 @@ pmt(p, i, n)
 \item{i}{interest rate}
 
 \item{n}{number of periods}
+
+\item{end}{if true, payment at end of period, otherwise beginning}
 }
 \value{
 The level payment in the annuity
@@ -23,7 +25,8 @@ The level payment in the annuity
 Returns POSITIVE payment for positive principal
 }
 \examples{
-pmt(450, .07, 20)
+pmt(100, 0.08, 10)
+pmt(100, 0.08, 10, TRUE)
 }
 \keyword{pmt}
 

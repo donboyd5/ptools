@@ -4,16 +4,18 @@
 \alias{gaip}
 \title{Graduated annuity initial payment (payments grow at constant annual rate).}
 \usage{
-gaip(p, i, g, n)
+gaip(p, i, n, g, end)
 }
 \arguments{
 \item{p}{principal}
 
 \item{i}{interest rate}
 
+\item{n}{number of periods}
+
 \item{g}{growth rate of payments (annual)}
 
-\item{n}{number of periods}
+\item{end}{if TRUE, payment at the end of period}
 }
 \value{
 The initial payment in the graduated annuity
@@ -25,7 +27,8 @@ The initial payment in the graduated annuity
 Returns POSITIVE payment for positive principal
 }
 \examples{
-gaip(450, .07, .03, 20)
+gaip(100, 0.08, 10, 0.04)
+gaip(100, 0.08, 10, 0.02, end = TRUE)
 }
 \keyword{gaip}
 

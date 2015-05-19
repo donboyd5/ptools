@@ -2,7 +2,7 @@ Package: ptools
 Type: Package
 Title: Tools for simulation modeling of pension funds
 Version: 0.1
-Description: Functions needed for simulation modeling
+Description: Functions needed for simulation modeling.
 Date: 2015-05-19
 Author: Don Boyd <donboyd5@gmail.com>
 Maintainer: Don Boyd <donboyd5@gmail.com>
