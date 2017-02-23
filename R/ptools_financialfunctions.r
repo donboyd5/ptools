@@ -1,6 +1,6 @@
 # ptools_financialfunctions.r
 # Don Boyd
-# 5/19/2015
+# 2/23/2017
 
 
 #' @title Constant dollar amortization method
@@ -17,7 +17,7 @@
 #' @export
 #' @examples
 #' amort_cd(100, 0.08, 10, FALSE)
-amort_cd <- function(p, i, m, end = FALSE) rep(pmt(p, i, m, end), m)
+amort_cd <- function(p, i, m, end = FALSE) {rep(pmt(p, i, m, end), m)}
 
 
 #' @title Constant percent amortization method
@@ -35,7 +35,7 @@ amort_cd <- function(p, i, m, end = FALSE) rep(pmt(p, i, m, end), m)
 #' @export
 #' @examples
 #' amort_cp(100, 0.08, 10, .03, FALSE)
-amort_cp <- function(p, i, m, g, end = FALSE) gaip(p, i, m, g, end)*(g + 1)^(1:m - 1)
+amort_cp <- function(p, i, m, g, end = FALSE) {gaip(p, i, m, g, end)*(g + 1)^(1:m - 1)}
 
 
 #' @title Constant percent amortization method

@@ -9,4 +9,4 @@ Maintainer: Don Boyd <donboyd5@gmail.com>
 License: GPL-2
 LazyData: TRUE
 Imports: dplyr
-
+RoxygenNote: 6.0.1
